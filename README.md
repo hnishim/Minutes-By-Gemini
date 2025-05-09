@@ -46,3 +46,12 @@ python createMinuteByGemini.py 入力ファイル.mp3
 
 ## 依存パッケージ
 - google-generativeai
+
+## プロンプトファイル（prompt.md）のエイリアスについて
+
+- 別の場所にあるprompt.mdを参照したい場合は、**Finderのエイリアスではなく、ターミナルでシンボリックリンクを作成してください。**
+- 例：
+  ```bash
+  ln -s /本物の/prompt.md /Users/hnishim/Documents/Scripts/Raycast-scripts/minutesByGemini/prompt.md
+  ```
+- シンボリックリンクならPythonスクリプトから通常ファイルと同様に参照できます。
